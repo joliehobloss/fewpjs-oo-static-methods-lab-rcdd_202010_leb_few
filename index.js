@@ -8,22 +8,22 @@ class Formatter {
     return string.replace(/[&\/\\#,+()$~%.!@^":*?<>{}]/g, '');
   }
  
-static titleize(string){
+   static titleize(string){
 const words = string.split(" ");
 for(let i = 0; i < words.length; i++) {
-  //if(words[i].indexOf("the")!=1){
-  words[i] = words[i][0].toUpperCase() + words[i].substr(1);
-}else{
+if(words[i].indexOf("the")===1){
   words[i] = words[i][0].toLowerCase() + words[i].substr(1);
+}else{
+  words[i] = words[i][0].toUpperCase() + words[i].substr(1);
 }
-
-  }
+}
 return words.join(" ");
-}
+  }
+
 }
 
 
- /* if((words[i].indexOf("the")===1) || (words[i].indexOf("a")===1) || (words[i].indexOf("an")===1) || (words[i].indexOf("but")===1) || (words[i].indexOf("of")===1) || (words[i].indexOf("and")===1) || (words[i].indexOf("for")===1) || (words[i].indexOf("at")===1) || (words[i].indexOf("by")===1) || (words[i].indexOf("from")===1)){*/
+
 
 
 /*describe( "Formatter", () => {
