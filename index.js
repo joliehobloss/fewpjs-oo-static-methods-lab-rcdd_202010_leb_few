@@ -14,7 +14,7 @@ for(let i = 0; i < words.length; i++) {
 if(words.indexOf("the") === -1){
   words[i] = words[i][0].toUpperCase() + words[i].substr(1);
 }else{
-  words[i] = words[i][0].toLoCase() + words[i].substr(1);
+  words[i] = words[i][0].toLowerCase() + words[i].substr(1);
 }
 
   }
