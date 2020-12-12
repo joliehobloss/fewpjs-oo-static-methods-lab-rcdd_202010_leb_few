@@ -16,9 +16,9 @@ for(let i = 0; i < words.length; i++) {
 }else{
   words[i] = words[i][0].toUpperCase() + words[i].substr(1);
 }
-return words.join(" ");
   }
-
+  
+return words.join(" ");
 }
 }
 
