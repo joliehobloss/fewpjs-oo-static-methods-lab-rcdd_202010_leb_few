@@ -9,15 +9,15 @@ class Formatter {
   }
  
 static titleize(string){
-let words = string.split(" ");
+const words = string.split(" ");
 for(let i = 0; i < words.length; i++) {
-if(words[i].indexOf("the")===1){
-  words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+  if(words[i].indexOf("the")===1){
+  words[i] = words[i][0].toLowerCase() + words[i].substr(1);
 }else{
-  words[i] = words[i][0].toLowerCase() + words[i].slice(1);
+  words[i] = words[i][0].toUpperCase() + words[i].substr(1);
 }
+
   }
- 
 return words.join(" ");
 }
 }
