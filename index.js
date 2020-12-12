@@ -8,8 +8,8 @@ class Formatter {
     return string.replace(/[&\/\\#,+()$~%.!@^":*?<>{}]/g, '');
   }
  
-   static titleize(string){
-const words = string.split(" ");
+static titleize(string){
+let words = string.split(" ");
 for(let i = 0; i < words.length; i++) {
   if(words[i].indexOf("the")===1){
   words[i] = words[i][0].toLowerCase() + words[i].substr(1);
@@ -17,7 +17,7 @@ for(let i = 0; i < words.length; i++) {
   words[i] = words[i][0].toUpperCase() + words[i].substr(1);
 }
   }
-  
+ 
 return words.join(" ");
 }
 }
