@@ -16,9 +16,9 @@ if(words[i].indexOf('the')===1){
 }else{
   words[i] = words[i][0].toUpperCase() + words[i].substr(1);
 }
-return words.join(" ");
 }
 
+return words.join(" ");
   }
 
 }
